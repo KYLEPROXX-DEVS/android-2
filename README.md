@@ -61,7 +61,7 @@
 初始化仓库：
 
 ```sh
-    $ repo init -u https://github.com/SmartisanTech/android.git -b smartisan-m-onestep_bigboom -m manifest.xml
+    $ repo init -u https://github.com/KYLEPROXX-DEVS/android-2.git -b smartisan-m-onestep_bigboom -m manifest.xml
 ```
 > `Tips`: 中国的开发者可以使用清华的镜像，[使用帮助](https://mirrors.tuna.tsinghua.edu.cn/help/AOSP/)
 
