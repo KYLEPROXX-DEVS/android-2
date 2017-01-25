@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote fetch="https://android.googlesource.com"  name="aosp" review="android-review.googlesource.com" revision="refs/tags/android-6.0.1_r74" />
+   <remote  name="aosp"
+           fetch="https://android.googlesource.com"
+           review="android-review.googlesource.com"
+           revision="refs/tags/android-6.0.1_r74" />
+  
+  <remote  name="private"
+           fetch="ssh://git@github.com" />
            
   <remote fetch=".." name="github" revision="refs/heads/smartisan-m-onestep_bigboom" />\
   
