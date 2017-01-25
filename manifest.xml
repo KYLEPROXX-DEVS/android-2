@@ -3,7 +3,10 @@
 
   <remote fetch="https://android.googlesource.com"  name="aosp" review="android-review.googlesource.com" revision="refs/tags/android-6.0.1_r74" />
            
-  <remote fetch=".." name="github" revision="refs/heads/smartisan-m-onestep_bigboom" />
+  <remote fetch=".." name="github" revision="refs/heads/smartisan-m-onestep_bigboom" />\
+  
+  <remote  name="github"
+           fetch="https://github.com" />
 
   <default remote="aosp" sync-c="true"/>
 
@@ -73,6 +76,8 @@
   <project path="external/bzip2" name="platform/external/bzip2" groups="pdk" />
   <project path="external/cblas" name="platform/external/cblas" groups="pdk" />
   <project path="external/ceres-solver" name="platform/external/ceres-solver" groups="pdk-cw-fs,pdk-fs" />
+  <project path="external/ffmpeg" name="CyanogenMod/android_external_ffmpeg" remote="github" revision="cm-13.0" />
+  <project path="external/stagefright-plugins" name="CyanogenMod/android_external_stagefright-plugins" remote="github" revision="cm-13.0" />
   <project path="external/chromium-libpac" name="platform/external/chromium-libpac" groups="pdk-fs" />
   <project path="external/chromium-trace" name="platform/external/chromium-trace" groups="pdk" />
   <project path="external/chromium-webview" name="platform/external/chromium-webview" groups="pdk" />
@@ -263,7 +268,7 @@
   <project path="external/zlib" name="platform/external/zlib" groups="pdk" />
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs,pdk-fs" />
-  <project path="frameworks/av" name="platform/frameworks/av" groups="pdk" />
+  <project path="frameworks/av" name="TheComputerGuy96/android_frameworks_av" remote="github" revision="aosp-6.0" />
   <project path="frameworks/base" name="SmartisanTech/android_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="github"/>
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
@@ -461,7 +466,7 @@
   <project path="system/gatekeeper" name="platform/system/gatekeeper" groups="pdk" />
   <project path="system/keymaster" name="platform/system/keymaster" groups="pdk" />
   <project path="system/media" name="platform/system/media" groups="pdk" />
-  <project path="system/netd" name="platform/system/netd" groups="pdk" />
+  <project path="system/media" name="CyanogenMod/android_system_media" remote="github" revision="cm-13.0" />
   <project path="system/security" name="platform/system/security" groups="pdk" />
   <project path="system/vold" name="platform/system/vold" groups="pdk" />
   <project path="tools/adt/eclipse" name="platform/tools/adt/eclipse" groups="notdefault,tools" />
@@ -482,4 +487,10 @@
   <project path="frameworks/smartisanos-base" name="SmartisanTech/android_frameworks_smartisanos-base" groups="pdk" remote="github" revision="refs/heads/smartisan-m"/>
   <project path="packages/apps/OneStep" name="SmartisanTech/packages_apps_OneStep" groups="pdk-fs" remote="github" />
   <project path="packages/apps/BigBang" name="SmartisanTech/packages_apps_BigBang" groups="pdk-fs" remote="github" />
+  
+  <project path="kernel/samsung/kyleproxx" name="TheComputerGuy96/android_kernel_samsung_kyleproxx" remote="github" revision="cm-13.0" />
+  <project path="device/samsung/kylepro" name="TheComputerGuy96/android_device_samsung_kylepro" remote="github" revision="aosp-6.0" />
+  <project path="device/samsung/kyleprods" name="TheComputerGuy96/android_device_samsung_kyleprods" remote="github" revision="aosp-6.0" />
+  <project path="external/chromium-webview" name="TheComputerGuy96/android_external_chromium-webview" remote="github" revision="aosp-6.0" />
+   
 </manifest>
